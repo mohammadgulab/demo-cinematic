@@ -65,7 +65,7 @@ scenes.forEach(function(sc,i){
  gsap.fromTo(img,{yPercent:-12},{yPercent:0,ease:'none',scrollTrigger:{trigger:sc,start:'top bottom',end:'top top',scrub:true}});
  gsap.from(txt.children,{y:70,opacity:0,stagger:.08,ease:'power3.out',scrollTrigger:{trigger:sc,start:'top 35%',end:'top top',scrub:1}});
  var nx=scenes[i+1];
- if(nx){gsap.to(sc,{scale:.88,borderRadius:18,filter:'brightness(.35)',ease:'none',scrollTrigger:{trigger:nx,start:'top bottom',end:'top top',scrub:true}});}
+ if(nx){gsap.to(sc,{scale:.88,borderRadius:18,filter:'brightness(.5)',ease:'none',scrollTrigger:{trigger:nx,start:'top bottom',end:'top top',scrub:true}});}
 });
 
 /* spotlight */

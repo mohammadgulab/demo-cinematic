@@ -82,6 +82,7 @@ html:not(.js) .intro,html.rm .intro{display:none}
 .work{position:relative}
 .work-head{padding:0 var(--pad) clamp(40px,7vh,80px)}
 .stack{position:relative}
+.scene{margin-bottom:55vh}.scene:last-child{margin-bottom:0}
 .scene{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;align-items:flex-end;background:var(--bg)}
 .scene-media{position:absolute;inset:0;will-change:transform}
 .scene-media img{width:100%;height:118%;object-fit:cover;will-change:transform}
