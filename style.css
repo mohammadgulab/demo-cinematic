@@ -47,7 +47,9 @@ html:not(.js) .intro,html.rm .intro{display:none}
 @media (max-width:860px){
  .burger{display:block}.pill span{display:none}.pill{padding:0;width:44px;height:44px;justify-content:center}
  .nav{position:fixed;inset:0;z-index:-1;flex-direction:column;justify-content:center;gap:6px;padding:0 var(--pad);background:#0b0a09;clip-path:inset(0 0 100% 0);transition:clip-path .7s cubic-bezier(.7,0,.2,1)}
+ .nav{height:100vh;height:100dvh;overflow-y:auto}
  .nav.open{clip-path:inset(0 0 0 0)}
+ .hdr.menu-open{background:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;translate:none!important;transform:none!important}
  .nav a{font:800 clamp(40px,12vw,64px)/1.1 var(--head);font-stretch:115%;text-transform:uppercase;letter-spacing:-.03em;opacity:1}
  .hdr{gap:10px}
 }

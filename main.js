@@ -5,7 +5,7 @@ var $=function(s,c){return (c||d).querySelector(s)},$$=function(s,c){return [].s
 
 /* menu */
 var burger=$('#burger'),nav=$('#nav');
-function setMenu(o){nav.classList.toggle('open',o);burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Close menu':'Open menu');d.body.style.overflow=o?'hidden':'';}
+function setMenu(o){nav.classList.toggle('open',o);var hd=$('.hdr');if(hd)hd.classList.toggle('menu-open',o);burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Close menu':'Open menu');d.body.style.overflow=o?'hidden':'';}
 burger.addEventListener('click',function(){setMenu(!nav.classList.contains('open'))});
 
 /* whatsapp form */
